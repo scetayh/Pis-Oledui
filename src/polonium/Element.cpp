@@ -1,4 +1,4 @@
-#include "Element.h"
+#include "../../include/polonium/Element.h"
 #include <iostream>
 extern "C"
 {
