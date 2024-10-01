@@ -7,15 +7,19 @@ all:
 	make test
 
 clean:
-	rm -rf build/{bin,obj,lib}/*
+	rm -rf build/bin/*
+	rm -rf build/obj/*
+	rm -rf build/lib/*
 
 GCFK:
-	mkdir -p build/{obj,lib}
+	mkdir -p build/obj
+	mkdir -p build/lib
 	gcc -c src/pis-oledui/GCFK.c -o build/obj/GCFK.o
 	ar rcs build/lib/libGCFK.a build/obj/GCFK.o
 
 oled:
-	mkdir -p build/{obj,lib}
+	mkdir -p build/obj
+	mkdir -p build/lib
 	gcc -c src/pis-oledui/oled.c -o build/obj/oled.o
 	ar rcs build/lib/liboled.a build/obj/oled.o
 
