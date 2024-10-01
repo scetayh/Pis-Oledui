@@ -1,6 +1,6 @@
-#include "oled.h"
+#include "../../include/pis-oledui/oled.h"
 #include "stdlib.h"
-#include "font.h"
+#include "../../include/pis-oledui/font.h"
 #include <stdio.h>
 #include <wiringPi.h>
 #include <wiringPiI2C.h>

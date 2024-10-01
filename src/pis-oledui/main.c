@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <wiringPiI2C.h>
-#include "oled.h"
-#include "GCFK.h"
+#include "../../include/pis-oledui/oled.h"
+#include "../../include/pis-oledui/GCFK.h"
  
 int fd;
 

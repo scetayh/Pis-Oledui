@@ -1,5 +1,3 @@
-/lib/
-main
-test
-/.vscode
+build/
+.vscode/
 oled_fd.ini

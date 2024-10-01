@@ -2,10 +2,10 @@
 #include <iostream>
 extern "C"
 {
-    #include "../oled.h"
+    #include "../../include/pis-oledui/oled.h"
     #include <wiringPi.h>
     #include <wiringPiI2C.h>
-    #include "../GCFK.h"
+    #include "../../include/pis-oledui/GCFK.h"
     #include <stdio.h>
     #include <string.h>
     #include "stdlib.h"
