@@ -1,6 +1,6 @@
 .PHONY: all clean
 
-pis-oledui:
+all:
 	make GCFK
 	make oled
 	make main
