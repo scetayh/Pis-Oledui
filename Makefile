@@ -1,10 +1,13 @@
-.PHONY: all
+.PHONY: all clean
 
-all:
+pis-oledui:
 	make GCFK
 	make oled
 	make main
 	make test
+
+clean:
+	rm -rf build/{bin,obj,lib}/*
 
 GCFK:
 	mkdir -p build/{obj,lib}
