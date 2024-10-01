@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: compile WiringPi
+      run: mkdir src && cd src && git clone https://github.com/WiringPi/WiringPi.git && cd WiringPi && ./build debian && mv debian-template/wiringpi-3.0-1.deb . && apt install ./wiringpi-3.0-1.deb && cd .. && cd ..
     - name: make
       run: make
